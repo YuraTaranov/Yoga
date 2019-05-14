@@ -230,6 +230,18 @@ header ul li:before {
   font-size: 90px;
   color: #c78030;
 }
+.content .timer-numbers-item {
+  display: inline-block;
+  justify-content: center;
+  margin-right: 30px;
+}
+.content .timer-numbers-item-elem {
+  font-size: 20px;
+}
+.content .timer-numbers-colon {
+  position: absolute;
+  transform: translate(-200%, -5%);
+}
 .content .timer-numbers:after {
   content: '';
   display: block;
@@ -238,6 +250,27 @@ header ul li:before {
   background-color: #c78030;
   margin: 0 auto;
   margin-top: 4px;
+}
+.content .timer-footer {
+  width: 100%;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  color: #c78030;
+  font-size: 20px;
+  padding-left: 150px;
+}
+.content .timer-footer-days {
+  margin-right: 100px;
+}
+.content .timer-footer-hs {
+  margin-right: 100px;
+}
+.content .timer-footer-min {
+  margin-right: 60px;
+}
+.content .timer-footer-sec {
+  margin-right: 130px;
 }
 .content .slider {
   margin-top: 150px;
@@ -617,9 +650,4 @@ header ul li:before {
 }
 .overlay .popup-form-btn:hover {
   box-shadow: 0 0 10px #c78030;
-}
-
-.status {
-  color: #c78030;
-  margin-top: 15px;
 }
