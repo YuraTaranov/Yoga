@@ -231,6 +231,18 @@ header {
 			margin-top: 40px;
 			font-size: 90px;
 			color: @main-color;
+			&-item {
+				display: inline-block;
+				justify-content: center;
+				margin-right: 30px;
+				&-elem {
+					font-size: 20px;
+				}
+			}
+			&-colon {
+				position: absolute;
+				transform: translate(-200%, -5%);
+			}
 			&:after {
 				content: '';
 				display: block;
@@ -239,6 +251,27 @@ header {
 				background-color: @main-color;
 				margin: 0 auto;
 				margin-top: 4px;
+			}
+		}
+		&-footer {
+			width: 100%;
+			height: 50px;
+			display: flex;
+			justify-content: center;
+			color: @main-color;
+			font-size: 20px;
+			padding-left: 150px;
+			&-days {
+				margin-right: 100px;
+			}
+			&-hs {
+				margin-right: 100px;
+			}
+			&-min {
+				margin-right: 60px;
+			}
+			&-sec {
+				margin-right: 130px;
 			}
 		}
 	}
