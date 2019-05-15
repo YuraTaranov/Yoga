@@ -153,6 +153,18 @@ header ul li:before {
 .content .info-header-tab:hover:after {
   width: 60%;
 }
+.content .info-header-tab-active:after {
+  content: '';
+  display: block;
+  width: 60%;
+  height: 3px;
+  background-color: #c78030;
+  margin-top: 4px;
+  transition: 0.4s;
+}
+.content .info-header-tab-disabled:after {
+  width: 0%;
+}
 .content .info-tabcontent {
   width: 100%;
   display: flex;

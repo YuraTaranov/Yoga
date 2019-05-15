@@ -347,9 +347,14 @@ function tabs() {
 
     function hideTabContent(a) {
         for (let i = a; i < tabContent.length; i++) {
-
+            
             tabContent[i].classList.remove('show');
             tabContent[i].classList.add('hide');
+
+            for (let i = a; i < tab.length; i++) {
+                tab[i].classList.remove('info-header-tab-active');
+                tab[i].classList.add('info-header-tab-disabled');
+            }
         }
     }
 
@@ -359,6 +364,10 @@ function tabs() {
         if (tabContent[b].classList.contains('hide')) {
             tabContent[b].classList.remove('hide');
             tabContent[b].classList.add('show');
+        }
+        if (tab[b].classList.contains('info-header-tab-disabled')) {
+            tab[b].classList.remove('info-header-tab-disabled');
+            tab[b].classList.add('info-header-tab-active');
         }
     }
 

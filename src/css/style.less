@@ -152,6 +152,22 @@ header {
 						width: 60%;
 					}
 				}
+				&-active {
+					&:after {
+						content: '';
+						display: block;
+						width: 60%;
+						height: 3px;
+						background-color: @main-color;
+						margin-top: 4px;
+						transition:0.4s;
+					}
+				}
+				&-disabled {
+					&:after {
+					width: 0%;
+					}
+				}
 			}
 		}
 		&-tabcontent {
