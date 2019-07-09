@@ -395,7 +395,7 @@ module.exports = tabs;
 
 function timers() {
     
-    let deadline = '2019-07-13';
+    let deadline = '2019-08-08';
 
     function getTimeRemaining(endtime) {
         let t = Date.parse(endtime) - Date.parse(new Date());
